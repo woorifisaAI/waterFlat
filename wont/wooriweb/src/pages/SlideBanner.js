@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './SlideBanner.css';
+
 
 const SlideBanner = () => {
   const settings = {
@@ -17,28 +19,31 @@ const SlideBanner = () => {
   return (
     <div className="slide-banner">
       <Slider {...settings}>
-      <div className="slide-item" >
-          <img 
-          src="img/b3.jpg" alt="Slide 2"
-          style={{ width: '1550px', height: '500px' }}
-          className="slide-item"
+        <div className="slide-image">
+          <img
+            src="img/b1.png"
+            alt="Slide 2"
+            className="center-image"
           />
         </div>
 
-      <div className="slide-item">
-          <img 
-          src="" alt="Slide 2" 
-          style={{ width: '1535px', height: '500px' }}
-          className="slide-item"
+        <div className="slide-item">
+          <img
+            src="img/b2.png"
+            alt="Slide 2"
+            className="center-image"
           />
         </div>
 
         <div>
-          <img src="img/ci.jpg"  alt="Slide 3" 
-          style={{ width: '1535px', height: '500px' }}
-          className="slide-item"/>
+          <img
+            src="img/ci.jpg"
+            alt="Slide 3"
+            className="center-image"
+          />
         </div>
       </Slider>
+
     </div>
   );
 };
