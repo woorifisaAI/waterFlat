@@ -1,14 +1,20 @@
-import { Button } from 'semantic-ui-react';
+import { Button, Form, Grid, Header, Image, Message, Segment, Progress, Input, Menu } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import './App.css';
-
-
 import React, { Component } from 'react';
-import { Menu } from 'semantic-ui-react';
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import SlideBanner from './pages/SlideBanner';
 import Marketing from './pages/marketing'; // 수정: 파일 이름과 컴포넌트 이름을 일치시킴
-import postview from './pages/postview';
+import BoardView from './pages/BoardView';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+import Update from './pages/Update';
+import Topic from './pages/Topic';
+import BoardWrite from './pages/BoardWrite';
+import BoardUpdate from './pages/BoardUpdate';
+import BoardReply from './pages/BoardReply';
+
+
 
 export default class MenuExampleMenus extends Component {
   state = {}
@@ -70,7 +76,17 @@ export default class MenuExampleMenus extends Component {
             <Routes>
               <Route path="/" element={<SlideBanner />} /> {/* 수정: 기본 경로 */}
               <Route path="/marketing" element={<Marketing />} />
-              <Route path="/postview" element={postview} />
+              <Route path="/board" element={<BoardView />} />
+              <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/update" element={<Update/>} />
+          <Route path="/topic" element={<Topic/>} />
+          <Route path="/boardwrite" element={<BoardWrite/>} />
+          <Route path="/boardupdate" element={<BoardUpdate/>} />
+          <Route path="/boardreply" element={<BoardReply/>} />
+
+
+              
 
                {/* 수정: 경로와 컴포넌트 */}
               {/* 다른 라우트 설정도 추가할 수 있습니다. */}
