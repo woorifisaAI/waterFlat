@@ -1,0 +1,19 @@
+/* App.css 또는 다른 CSS 파일에 추가할 스타일 */
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contents {
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  

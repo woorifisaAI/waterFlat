@@ -5,7 +5,7 @@ import RatingExampleCustomIcon from './RatingExampleCustomIcon'; // 커스텀 �
 import MessageExampleFloating from './MessageExampleFloating'; // floating 메시지 컴포넌트 import
 
 
-function marketing() {
+function Marketing() {
   return (
     <div className="grid-container">
       <div className="left-side">
@@ -49,4 +49,4 @@ function marketing() {
   );
 }
 
-export default marketing;
+export default Marketing;
