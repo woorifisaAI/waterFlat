@@ -1,0 +1,24 @@
+/* App.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 좌우로 동일한 너비로 분할 */
+    gap: 20px; /* 좌우 간격 설정 */
+  }
+  
+  .left-side, .right-side {
+    padding: 20px;
+    border: 1px solid #ccc; /* 테두리 스타일을 추가할 수 있음 */
+  }
+  
+/* marketing.css */
+
+/* 라벨을 좌측 끝으로 이동 */
+.ui.form .field > label {
+    text-align: left;
+    float: left;
+    clear: both;
+    width: 100px; /* 라벨의 폭을 조절하거나 필요에 따라 조절하세요 */
+    margin-right: 10px; /* 라벨과 입력 필드 사이 간격 조절 (원하는 만큼) */
+  }
+  
