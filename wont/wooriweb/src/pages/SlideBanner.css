@@ -1,0 +1,12 @@
+.slider-image {
+    display: flex; /* 이미지를 가로로 가운데 정렬하기 위해 Flexbox를 사용 */
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
