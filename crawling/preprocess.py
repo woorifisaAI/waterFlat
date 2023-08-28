@@ -9,6 +9,13 @@ for file in files:
     file_path=os.path.join(files_path,file)
     data_path.append(file_path)
 
+pattern = r'\([^)]*\)'  # ()
+pattern1 = r'\[[^)]*\]'  # []
+pattern2 = r'\<[^)]*\>'  # <>
+pattern3 = r'\{[^)]*\}'  # {}
+pattern4 = r'\【[^)]*\】' # 【】
+pattern5 = r'\❝[^)]*\❞' #  ❝ ❞
+
 print(data_path)
 for file in data_path:
     with open(file, encoding='utf-8') as f:
