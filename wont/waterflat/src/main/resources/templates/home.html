@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header.html :: head" />
+<body>
+    <div th:replace="fragments/header.html :: header ('home')"/>
+    <div class="row">
+        <div class="offset-1 col-5 card" style="height: fit-content">
+            <div class="card-body">
+                <h2>환영합니다</h2>
+            </div>
+        </div>
+        <div class="offset-2 col-3">
+            <div class="card" style="height: fit-content">
+                <div class="card-body">
+                    <h2>전체 유저 정보</h2>
+                    <h5>&ast; 전체 유저: [[${userCntDto.totalUserCnt}]]명</h5>
+                    <h5>&ast; 관리자: [[${userCntDto.totalAdminCnt}]]명</h5>
+                </div>
+            </div> <br/>
+            <div class="card" style="height: fit-content">
+                <div class="card-body">
+                    <h2>전체 게시판 정보</h2>
+                    <h5>&ast; 전체 글: [[${boardCntDto.totalBoardCnt}]]개</h5>
+                    <h5>&ast; 공지: [[${boardCntDto.totalNoticeCnt}]]개</h5>
+                    <h5>&ast; Q&A 게시판: [[${boardCntDto.totalGreetingCnt}]]개</h5>
+                </div>
+            </div>
+        </div>
+</body>
+<style>
+    h2 {
+        margin-bottom: 20px;
+    }
+    h5 {
+        margin-bottom: 10px;
+    }
+</style>
+</html>
