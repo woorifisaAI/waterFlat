@@ -164,7 +164,7 @@ cython_debug/
 # ours
 data/
 .venv
-key/
+keys/
 **/node_modules/
 
 # dependencies
